@@ -7,33 +7,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        html {
+          scroll-behavior: smooth
+        }
+        .sticky {
+         position: fixed;
+         top: 0;
+         width: 100%;
+         background-color: red;
+        }
+    
+      </style> -->
 </head>
 <body>
     <!-- component -->
 <div class="relative text-gray-800 bg-gray-50 ">
     <!-- Navbar -->
-        <header>
-            <nav class="w-full">
+        <header class="sticky top-0 bg-slate-300 " >
+            <nav class="w-full h-full -z-50">
                 
                 <div class="flex justify-between w-full px-16 py-8">
                     <!-- Left Nav -->
                     <div>
                         <ul
-                            class="flex flex-col text-left md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-xl md:text-2xl">
+                            class="flex flex-col text-left md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-xl md:text-2xl sticky top-0 z-50">
                             <li class="text-left">
-                                <a href="#experience">
+                                <a href="#home">
                                     Home
                                 </a>
     
                             </li>
                             <li class="text-left">
-                                <a href="#experience">
+                                <a href="#about">
                                     About
                                 </a>
     
                             </li>
                             <li class="text-left">
-                                <a href="#experience">
+                                <a href="#skill">
                                     Skills
                                 </a>
     
@@ -62,7 +74,7 @@
                             </li>
                                     
                             <li>
-                                <a href="https://www.linkedin.com" target="_blank" aria-label="linkedin"
+                                <a href="https://mail.google.com/mail/u/4/?ogbl#inbox" target="_blank" aria-label="linkedin"
                                     class="hover:text-blue-600">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
@@ -86,7 +98,7 @@
                 <!-- image -->
                 <img class="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
                     src="https://graphicdesignjunction.com/wp-content/uploads/2018/07/Graffiti_Painting_Artwork_6.jpg" alt="Your Name Here">
-                <h1 class="text-5xl sm:text-6xl lg:text-9xl">Kan kaewkamol</h1>
+                <h1 class="text-5xl sm:text-6xl lg:text-9xl" id="home">Kan kaewkamol</h1>
                 <h2 class="font-light text-4xl sm:text-5xl lg:text-8xl">UX/UI Designer</h2>
             </div>
         </section>
@@ -103,11 +115,11 @@
                     <span class="text-lg">UML diagram</span>
                     <span class="text-lg">Communication</span>
                 </div>
-                <div class="px-10 md:px-20">
+                <!-- <div class="px-10 md:px-20">
                     <h3 class="text-xl font-bold">Summary</h3>
                     <br>
                     <p class="w-full md:w-2/3"></p>
-                </div>
+                </div> -->
                 <div class="px-10 md:px-20">
                     <br>
                     <h3 class="text-xl font-bold">Contact</h3>
@@ -123,140 +135,193 @@
                 <div class="px-20">
                     <h4 class="text-xl font-bold">Experience</h4>
                     <br>
-                    <p class="text-6xl">+2</p>
+                    <p class="text-6xl">+0</p>
                 </div>
                 <div class="px-20">
                     <h4 class="text-xl font-bold">Projects</h4>
                     <br>
-                    <p class="text-6xl">+25</p>
+                    <p class="text-6xl">+3</p>
                 </div>
-                <div class="px-20">
+                <!-- <div class="px-20">
                     <h4 class="text-xl font-bold">Clients</h4>
                     <br>
                     <p class="text-6xl">+14</p>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- /image section -->
         <hr class="border-gray-400 mx-44" />
         <!-- Resume -->
-        <section class="px-20 mt-10">
+        <section class="px-20 mt-10" id="about">
             <h4 class="mb-8 text-3xl font-bold text-center md:text-left">About</h4>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl font-bold">Full Stack Developer</h5>
-                    <h6 class="text-lg font-bold">Facebook</h6>
+                    <h5 class="text-xl md:text-2xl font-bold">Mindset</h5>
+                    <h6 class="text-lg font-bold"></h6>
                     <p>Jan 2015 - present</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>xxxxxxxxxxxxx</p>
+                    <p>Enthusiastic and hardworking UX/UI design intern with a strong passion 
+                        for creating intuitive and user-friendly designs. Skilled in prototyping, user research, 
+                        and design tools such as Figma</p>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Software Developer</h5>
-                    <h6 class="text-lg font-bold">Google</h6>
+                    <h5 class="text-xl md:text-2xl  font-bold">Objectiv</h5>
+                    <h6 class="text-lg font-bold"></h6>
                     <p>Feb 2010 - Jan 2015</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>-To gain practical experience and apply theoretical knowledge learned at university 
+                        to a real-world setting.
+                        <br>
+                        -To explore potential career paths and gain a better understanding of the industry 
+                        and the job market.</p>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Web Developer</h5>
-                    <h6 class="text-lg font-bold">IBM</h6>
-                    <p>Apr 2008 - Feb 2010</p>
+                    <h5 class="text-xl md:text-2xl  font-bold">Period - Duration of the internship
+                    </h5>
+                    <h6 class="text-lg font-bold"></h6>
+                    <p></p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>2 May - 30 June 2023 ( 2 Months )
+                        <br>
+                        1 July - 30 October 2023 ( 4 Months )</p>
                 </div>
             </div>
-            <h4 class="mb-8 text-3xl font-bold text-center md:text-left">Skills</h4>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl font-bold">Full Stack Developer</h5>
-                    <h6 class="text-lg font-bold">Facebook</h6>
+                    <h5 class="text-xl md:text-2xl font-bold">Summary</h5>
+                    <h6 class="text-lg font-bold"></h6>
+                    <p>Jan 2015 - present</p>
+                </div>
+                <div class="flex flex-col col-span-4">
+                    <p>summary resume UX/Ui design
+
+                        A UX/UI designer is responsible for the design of user interfaces for websites and software applications. They work to create visually appealing and intuitive layouts that make it easy for users to navigate and interact with the product.
+                        
+                        In a summary resume, you might highlight your experience in:
+                        
+                        Conducting user research and user testing to understand the needs and behaviors of the target audience
+                        Creating wireframes, prototypes, and high-fidelity mockups to visualize and test design concepts
+                        Collaborating with cross-functional teams, such as developers and product managers, to ensure the final product meets the needs of the user and the business
+                        </p>
+                </div>
+            </div>
+            <h4 class="mb-8 text-3xl font-bold text-center md:text-left" id="skill">Skills</h4>
+            <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+                <div class="flex flex-col col-span-2 mb-4 md:mb-0">
+                    <h5 class="text-xl md:text-2xl font-bold">JavaScript</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
                     <p>Jan 2015 - present</p>
                 </div>
                 <div class="flex flex-col col-span-4">
                     <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">xxxxxxxxxxxxx <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
+    
                 </div>
+            
+
+
             </div>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Software Developer</h5>
-                    <h6 class="text-lg font-bold">Google</h6>
+                    <h5 class="text-xl md:text-2xl  font-bold">CSS&Html</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
                     <p>Feb 2010 - Jan 2015</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">xxxxxxxxxxxxx <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Web Developer</h5>
-                    <h6 class="text-lg font-bold">IBM</h6>
+                    <h5 class="text-xl md:text-2xl  font-bold">UML diagram</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
                     <p>Apr 2008 - Feb 2010</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>In Unified Modeling Language (UML), a class diagram is a type of diagram that shows the relationships between classes or objects in a system. One of the most basic elements of a class diagram is the class itself, which is represented by a rectangle with the class name at the top and the class's attributes and methods listed below. The class can be represented by three lines as you have said,</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">Skill level <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
                 </div>
             </div>
             <h4 class="mb-8 text-3xl font-bold text-center md:text-left">Tool</h4>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl font-bold">Full Stack Developer</h5>
+                    <h5 class="text-xl md:text-2xl font-bold">Figma</h5>
                     <h6 class="text-lg font-bold">Facebook</h6>
                     <p>Jan 2015 - present</p>
                 </div>
                 <div class="flex flex-col col-span-4">
                     <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">xxxxxxxxxxxxx <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Software Developer</h5>
-                    <h6 class="text-lg font-bold">Google</h6>
+                    <h5 class="text-xl md:text-2xl  font-bold">Visual Studio <Code></Code></h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
                     <p>Feb 2010 - Jan 2015</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">xxxxxxxxxxxxx <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-6 my-10">
                 <div class="flex flex-col col-span-2 mb-4 md:mb-0">
-                    <h5 class="text-xl md:text-2xl  font-bold">Web Developer</h5>
-                    <h6 class="text-lg font-bold">IBM</h6>
+                    <h5 class="text-xl md:text-2xl  font-bold">Microsoft Office</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
                     <p>Apr 2008 - Feb 2010</p>
                 </div>
                 <div class="flex flex-col col-span-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                        adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                        laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                        voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                        harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
+                    <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">xxxxxxxxxxxxx <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+                <div class="flex flex-col col-span-2 mb-4 md:mb-0">
+                    <h5 class="text-xl md:text-2xl  font-bold">AdobeXD</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
+                    <p>Apr 2008 - Feb 2010</p>
+                </div>
+                <div class="flex flex-col col-span-4">
+                    <p>xxxxxxxxxxxxx</p>
+                    <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 "> skill level <span class=" text-xs text-bla-400">80%</span></h1>
+                    <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                        <div class=" w-full h-full bg-gray-200 absolute "></div>
+                        <div class=" h-full bg-black sm:bg-gray-500 absolute" style="width:10%"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -272,6 +337,21 @@
                 </div>
                 <div class="flex flex-col col-span-4 ">
                     <p>GPA 3.11</p>
+                </div>
+            </div>
+        </section>
+        <hr class="border-gray-400 mx-44" />
+        <!-- Resume -->
+        <section class="px-20 mt-10">
+            <h4 class="mb-8 text-3xl font-bold text-center md:text-left">Projects</h4>
+            <div class="grid grid-cols-1 md:grid-cols-6 my-10">
+                <div class="flex flex-col col-span-2 mb-4 md:mb-0">
+                    <h5 class="text-xl md:text-2xl  font-bold">xxxxxxxxxxxxx</h5>
+                    <h6 class="text-lg font-bold">xxxxxxxxxxxxx</h6>
+                    <p>xxxxxxxxxxxxx</p>
+                </div>
+                <div class="flex flex-col col-span-4 ">
+                    <p>xxxxxxxxxxxxx</p>
                 </div>
             </div>
         </section>
